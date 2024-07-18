@@ -53,23 +53,27 @@
 
 <!-- Hero section starts here -->
 <section class="mb-5 pb-5">
-  <div style="height: 480px;" class="container">
+  <style>
+    #hero {
+        height: 390px;
+    }
+    @media (max-width: 768px) { /* Assuming 'md' starts at 768px */
+        #hero {
+            height: 490px;
+        }
+    }
+</style>
+  <div  id="hero" class="container">
       <div class="row">
-          <div class="col-md-6 pt-5 my-5">
+          <div class="col-md-6 pt-5 mb-5">
               <p style="font-family: poppins; font-size: 35px;" class="fw-bold">Renting Fun From <br> <span class="text-danger ">Panama City Beach <br> to 30 A</span> </p>
               <button style="border: solid; border-color: red; font-family: poppins;" class="btn btn-light p-2 fs-5 shadow-lg">Reserve Yours Now</button>
           </div>
-          <div class="col-md-6">
-              <img class="img-fluid" src="https://sb.kaleidousercontent.com/67418/960x550/d2745edc21/cars-no-bg-1.png" alt="">
+          <div class="col-md-6 ">
+              <img  class="img-fluid " src="https://sb.kaleidousercontent.com/67418/960x550/d2745edc21/cars-no-bg-1.png" alt="">
           </div>
       </div>
   </div>
-    <style>
-      .btn:hover {
-      background-color: red;
-      color: white;
-      }
-    </style>
 </section>
 
 
