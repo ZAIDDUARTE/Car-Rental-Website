@@ -165,6 +165,7 @@
 </section>
 </center>
 
+    <!-- Section 2 starts here -->
 <section>
 <center>
     <p class="fs-1 fw-bold mt-5 pt-5">Our Services</p>
@@ -244,7 +245,7 @@
 </div>
 </section>
 
-
+<!-- Section 3 starts here -->
 <section class="scroll-animation my-5 py-5">
   <div style="height: 480px;" class="container">
       <div class="row">
@@ -259,6 +260,7 @@
   </div>
 </section>
 
+    <!-- Section 4 starts here -->
 <section class="scroll-animation my-5 py-5">
   <div style="height: 480px;" class="container">
       <div class="row flex-md-row-reverse">
@@ -273,6 +275,8 @@
   </div>
 </section>
 
+
+    <!-- Section 5 starts here -->
 <section class="scroll-animation my-5 py-5">
   <div style="height: 480px;" class="container">
       <div class="row">
@@ -287,6 +291,9 @@
   </div>
 </section>
 
+
+
+    <!-- Section 6 starts here -->
 <section class="scroll-animation my-5 py-5">
   <div style="height: 480px;" class="container">
       <div class="row flex-md-row-reverse">
@@ -310,100 +317,6 @@
     </style>
 </section>
 
-<style>
-  #hero {
-      height: 390px;
-  }
-
-  @media (max-width: 768px) {
-      #hero {
-          height: 490px;
-      }
-  }
-
-  .fade-in {
-      opacity: 0;
-      animation: fadeIn 2s forwards 1s;
-  }
-
-  @keyframes fadeIn {
-      from {
-          opacity: 0;
-      }
-      to {
-          opacity: 1;
-      }
-  }
-
-  .slide-in {
-      transform: translateX(100%);
-      animation: slideIn 2s forwards;
-  }
-
-  @keyframes slideIn {
-      from {
-          transform: translateX(100%);
-      }
-      to {
-          transform: translateX(0);
-      }
-  }
-
-  .card-img-top {
-      height: 200px;
-      object-fit: cover;
-  }
-
-  .card {
-      margin: 15px;
-  }
-
-  .btn:hover {
-      background-color: red;
-      color: white;
-      font-family: Poppins;
-  }
-
-  .scroll-animation {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 1s ease-out, transform 1s ease-out;
-  }
-
-  .scroll-animation.visible {
-      opacity: 1;
-      transform: translateY(0);
-  }
-</style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const scrollElements = document.querySelectorAll('.scroll-animation');
-
-      const elementInView = (el, dividend = 1) => {
-          const elementTop = el.getBoundingClientRect().top;
-          return (
-              elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
-          );
-      };
-
-      const displayScrollElement = (element) => {
-          element.classList.add('visible');
-      };
-
-      const handleScrollAnimation = () => {
-          scrollElements.forEach((el) => {
-              if (elementInView(el, 1.25)) {
-                  displayScrollElement(el);
-              }
-          })
-      };
-
-      window.addEventListener('scroll', () => {
-          handleScrollAnimation();
-      });
-  });
-</script>
 
  <!-- Footer -->
  <footer class="bg-dark text-light mt-5 pt-5 pb-4">
